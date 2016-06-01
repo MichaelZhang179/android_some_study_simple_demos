@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="clock   模拟时钟 + 数字时钟 + 日期时间"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

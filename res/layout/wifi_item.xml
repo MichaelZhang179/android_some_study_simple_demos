@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_selector"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/img_wifi_type"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp" />
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/tv_ssid"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:textSize="16sp" />
+	    <TextView
+	        android:id="@+id/tv_psw_tag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/gray"
+	        android:textSize="12sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/img_signal"
+            android:layout_width="26dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_wifi_signal_1" />
+        <TextView
+            android:id="@+id/tv_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="100%"
+            android:textColor="@color/gray"
+            android:textSize="11sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+	    <ImageView
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/img_connect" />
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="连接"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
